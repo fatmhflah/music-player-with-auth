@@ -6,8 +6,8 @@
         <img src="../assets/img/logout.svg"/>
       </button>
     </div>
-    <div v-else>
-      <router-link class="btn btn-info" to="login">login</router-link>
+    <div v-else class="d-flex justify-content-end">
+      <router-link class="btn btn-info me-2" to="login">login</router-link>
       <router-link class="btn btn-warning" to="register">sign up</router-link>
     </div>
     <div>

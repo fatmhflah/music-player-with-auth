@@ -12,7 +12,7 @@
         <input type="password" class="form-control" placeholder="enter password..." v-model.trim="password">
       </div>
 
-      <p class="alert alert-danger" v-if="errMsg">{{ errMsg }}</p>
+      <p class="alert alert-danger mt-3" v-if="errMsg">{{ errMsg }}</p>
 
 
       <div class="mt-3">
@@ -61,6 +61,9 @@ const login = () => {
             break
           case 'auth/wrong-password':
             errMsg.value = 'incorrect password'
+            break
+          case 'auth/email-already-in-use':
+            errMsg.value = 'this account already exists'
             break
         }
       })
